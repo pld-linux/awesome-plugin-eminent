@@ -1,0 +1,25 @@
+Eminent is a small lua library that monkey-patches awful to provide you with 
+effortless and quick wmii-style dynamic tagging. Unlike shifty, eminent does 
+not aim to provide a comprehensive tagging system, but tries to make dynamic 
+tagging as simple as possible. In fact, besides importing the eminent library, 
+you do not have to change your rc.lua at all, eminent does all the work for you.
+
+
+Setting Up Eminent
+
+Setting up eminent is as simple as adding require("eminent") to the top of your 
+rc.lua, after including awful.
+You don't need to change anything else in your rc.lua. If something does go 
+wrong (awesome is so versatile one can't possible test every setup), don't 
+hesitate to send an email to lucas@glacicle.org with your bug report.
+
+
+Using Eminent
+
+Use your awesome installation the same way you always did. You'll notice that 
+any tags that have no clients on them are automatically hidden. Moving to the 
+next tag after the last one will "create" (either re-use an existing but empty 
+tag or actually create a new one dynamically) a new tag for you to use.
+If you have any bindings set up on your number keys you should be able to use 
+those to jump to a specific tag irregardless of what eminent thinks.
+Happy tagging !
